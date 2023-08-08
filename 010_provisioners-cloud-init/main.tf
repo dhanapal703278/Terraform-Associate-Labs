@@ -39,7 +39,7 @@ resource "aws_security_group" "sg_my_server" {
       cidr_blocks      = ["0.0.0.0/0"]
       ipv6_cidr_blocks = []
 			prefix_list_ids  = []
-			security_groups = []
+			security_groups =  []
 			self = false
     },
     {

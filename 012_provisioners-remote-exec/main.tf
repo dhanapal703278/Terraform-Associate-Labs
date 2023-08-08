@@ -79,7 +79,7 @@ resource "aws_instance" "my_server" {
 	user_data = data.template_file.user_data.rendered
   provisioner "remote-exec" {
 		inline = [
-			"echo \"mars\" >> /home/ec2-user/barsoon/txt"
+			"echo \"mars\" >> /home/ec2-user/barsoon.txt"
 		]
 		connection {
 			type     = "ssh"
